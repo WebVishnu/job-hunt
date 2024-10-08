@@ -1,0 +1,20 @@
+{
+    "name": "job hunt",
+    "description": "Hunt jobs easily",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_icon": "./public/small-logo.png"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab"
+    ],
+    "chrome_url_overrides": {
+        "newtab": "./src/index.html"
+    },
+    "background": {
+        "service_worker": "./scripts/background.js"
+    }
+}
